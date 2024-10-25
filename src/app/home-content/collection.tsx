@@ -1,9 +1,14 @@
+import CollectionCard from '../components/collectionCard';
+
 export default function Collection() {
   return (
     <div className="collection">
       <h2 className="subtitle">all collection</h2>
       <div className="carousel-collection">
-        <div className="card" id="porsche">
+        <CollectionCard id="porsche" />
+        <CollectionCard id="brabus" />
+        <CollectionCard id="singer" />
+        {/* <div className="card" id="porsche">
           <p>porsche</p>
         </div>
         <div className="card" id="brabus">
@@ -11,7 +16,7 @@ export default function Collection() {
         </div>
         <div className="card" id="singer">
           <p>singer</p>
-        </div>
+        </div> */}
       </div>
     </div>
   );
