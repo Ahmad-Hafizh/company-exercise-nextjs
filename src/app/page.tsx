@@ -1,7 +1,4 @@
-// import Image from "next/image";
 'use client';
-import Navbar from './components/Navbar';
-// import Image from 'next/image';
 import About from './home-content/about';
 import NewArrival from './home-content/new';
 import About2 from './home-content/about2';
@@ -11,7 +8,6 @@ import Footer from './components/footer';
 export default function Home() {
   return (
     <>
-      <Navbar />
       <div className="hero">
         <h1>
           new

@@ -1,22 +1,27 @@
 'use client';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Navbar() {
   return (
     <nav className="navbar">
       <div className="list-menu">
         <ul>
-          <li>shop</li>
-          <li>about</li>
+          <li>
+            <Link href="/">shop</Link>
+          </li>
+          <li>
+            <Link href="/about">about</Link>
+          </li>
           <li>contact</li>
         </ul>
         <div className="mobile-menu">
           <Image src="/menu.png" alt="menu hamburger button" className="menu-mobile-button" fill />
         </div>
       </div>
-      <div className="nav-logo">
+      <Link href="/" className="nav-logo">
         <Image src="/porscheLogo.png" alt="porsche logo" fill />
-      </div>
+      </Link>
       <div className="list-menu">
         <ul>
           <li>account</li>
